@@ -11,6 +11,7 @@ app.use(cors());
 
 // Import Routes
 const placeholderWords = require("./routes/placeholder");
+const authRoutes = require("./routes/auth");
 
 // Connect to DB
 mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true , useUnifiedTopology: true }, () => console.log("Connected to DB"));
@@ -19,7 +20,8 @@ mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true , useUnifiedTop
 app.use(express.json());
 
 // Route Middlewares
-app.use('/api', placeholderWords)
+app.use('/api', placeholderWords);
+app.use('/api/user', authRoutes);
 
 // Listening on port 
 const port = process.env.PORT || 8080;
