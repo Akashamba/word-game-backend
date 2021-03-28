@@ -1,0 +1,25 @@
+{
+  "name": "word-game-backend",
+  "version": "1.0.0",
+  "description": "Backend for Word Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akashamba/word-game-backend.git"
+  },
+  "keywords": [
+    "nodejs",
+    "word",
+    "game",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akashamba/word-game-backend/issues"
+  },
+  "homepage": "https://github.com/Akashamba/word-game-backend#readme"
+}
