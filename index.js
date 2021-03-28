@@ -6,8 +6,8 @@ const cors = require("cors");
 
 // Setup and Config
 const app = express();
-dotenv.config()
-app.use(cors())
+dotenv.config();
+app.use(cors());
 
 // Import Routes
 const placeholderWords = require("./routes/placeholder");
